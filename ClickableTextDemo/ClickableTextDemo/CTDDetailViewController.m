@@ -2,50 +2,55 @@
 //  CTDDetailViewController.m
 //  ClickableTextDemo
 //
-//  Created by 0day on 14-3-18.
+//  Created by 0day on 14-3-20.
 //  Copyright (c) 2014年 0dayzh. All rights reserved.
 //
 
 #import "CTDDetailViewController.h"
 
+#import "NSString+Detector.h"
+
 @interface CTDDetailViewController ()
-- (void)configureView;
+<
+UITextViewDelegate
+>
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation CTDDetailViewController
 
-#pragma mark - Managing the detail item
-
-- (void)setDetailItem:(id)newDetailItem
-{
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                          action:@selector(handleTap:)];
+    [self.view addGestureRecognizer:tap];
+    
+    NSAttributedString *attibutedString = [self.content attributedStringWithTypes:NSTextCheckingTypeLink | NSTextCheckingTypePhoneNumber];
+    self.textView.attributedText = attibutedString;
+    self.textView.editable = NO;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleTextDidChangeNotification:)
+                                                 name:UITextViewTextDidChangeNotification
+                                               object:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)handleTap:(UITapGestureRecognizer *)tap {
+    if ([self.textView isFirstResponder]) {
+        self.textView.editable = NO;
+        [self.textView resignFirstResponder];
+    } else {
+        self.textView.editable = YES;
+        [self.textView becomeFirstResponder];
+    }
+}
+
+- (void)handleTextDidChangeNotification:(NSNotification *)notif {
+    NSAttributedString *attibutedString = [self.textView.text attributedStringWithTypes:NSTextCheckingTypeLink | NSTextCheckingTypePhoneNumber];
+    self.textView.attributedText = attibutedString;
 }
 
 @end

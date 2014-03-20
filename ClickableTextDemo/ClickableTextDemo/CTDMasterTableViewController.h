@@ -1,5 +1,5 @@
 //
-//  CTDDetailViewController.h
+//  CTDMasterTableViewController.h
 //  ClickableTextDemo
 //
 //  Created by 0day on 14-3-20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CTDDetailViewController : UIViewController
-
-@property (nonatomic, strong) NSString  *content;
+@interface CTDMasterTableViewController : UITableViewController
 
 @end

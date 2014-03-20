@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763582DA18DB363300BAF72F /* CTDMasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763582D918DB363300BAF72F /* CTDMasterTableViewController.m */; };
+		763582DD18DB365F00BAF72F /* CTDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 763582DC18DB365F00BAF72F /* CTDDetailViewController.m */; };
+		763582E018DB3BDF00BAF72F /* NSString+Detector.m in Sources */ = {isa = PBXBuildFile; fileRef = 763582DF18DB3BDF00BAF72F /* NSString+Detector.m */; };
 		76F4DAD818D89CF300F79036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F4DAD718D89CF300F79036 /* Foundation.framework */; };
 		76F4DADA18D89CF300F79036 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F4DAD918D89CF300F79036 /* CoreGraphics.framework */; };
 		76F4DADC18D89CF300F79036 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F4DADB18D89CF300F79036 /* UIKit.framework */; };
@@ -14,8 +17,6 @@
 		76F4DAE418D89CF300F79036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F4DAE318D89CF300F79036 /* main.m */; };
 		76F4DAE818D89CF300F79036 /* CTDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F4DAE718D89CF300F79036 /* CTDAppDelegate.m */; };
 		76F4DAEB18D89CF300F79036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F4DAE918D89CF300F79036 /* Main.storyboard */; };
-		76F4DAEE18D89CF300F79036 /* CTDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F4DAED18D89CF300F79036 /* CTDMasterViewController.m */; };
-		76F4DAF118D89CF300F79036 /* CTDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F4DAF018D89CF300F79036 /* CTDDetailViewController.m */; };
 		76F4DAF318D89CF300F79036 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F4DAF218D89CF300F79036 /* Images.xcassets */; };
 		76F4DAFA18D89CF300F79036 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F4DAF918D89CF300F79036 /* XCTest.framework */; };
 		76F4DAFB18D89CF300F79036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F4DAD718D89CF300F79036 /* Foundation.framework */; };
@@ -35,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		763582D818DB363300BAF72F /* CTDMasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDMasterTableViewController.h; sourceTree = "<group>"; };
+		763582D918DB363300BAF72F /* CTDMasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDMasterTableViewController.m; sourceTree = "<group>"; };
+		763582DB18DB365F00BAF72F /* CTDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDDetailViewController.h; sourceTree = "<group>"; };
+		763582DC18DB365F00BAF72F /* CTDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDDetailViewController.m; sourceTree = "<group>"; };
+		763582DE18DB3BDF00BAF72F /* NSString+Detector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Detector.h"; sourceTree = "<group>"; };
+		763582DF18DB3BDF00BAF72F /* NSString+Detector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Detector.m"; sourceTree = "<group>"; };
 		76F4DAD418D89CF300F79036 /* ClickableTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickableTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F4DAD718D89CF300F79036 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		76F4DAD918D89CF300F79036 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,10 +53,6 @@
 		76F4DAE618D89CF300F79036 /* CTDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDAppDelegate.h; sourceTree = "<group>"; };
 		76F4DAE718D89CF300F79036 /* CTDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDAppDelegate.m; sourceTree = "<group>"; };
 		76F4DAEA18D89CF300F79036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		76F4DAEC18D89CF300F79036 /* CTDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDMasterViewController.h; sourceTree = "<group>"; };
-		76F4DAED18D89CF300F79036 /* CTDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDMasterViewController.m; sourceTree = "<group>"; };
-		76F4DAEF18D89CF300F79036 /* CTDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTDDetailViewController.h; sourceTree = "<group>"; };
-		76F4DAF018D89CF300F79036 /* CTDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTDDetailViewController.m; sourceTree = "<group>"; };
 		76F4DAF218D89CF300F79036 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ClickableTextDemo/Images.xcassets; sourceTree = "<group>"; };
 		76F4DAF818D89CF300F79036 /* ClickableTextDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickableTextDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F4DAF918D89CF300F79036 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -157,10 +160,12 @@
 		76F4DB0F18D89D0200F79036 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				76F4DAEC18D89CF300F79036 /* CTDMasterViewController.h */,
-				76F4DAED18D89CF300F79036 /* CTDMasterViewController.m */,
-				76F4DAEF18D89CF300F79036 /* CTDDetailViewController.h */,
-				76F4DAF018D89CF300F79036 /* CTDDetailViewController.m */,
+				763582D818DB363300BAF72F /* CTDMasterTableViewController.h */,
+				763582D918DB363300BAF72F /* CTDMasterTableViewController.m */,
+				763582DB18DB365F00BAF72F /* CTDDetailViewController.h */,
+				763582DC18DB365F00BAF72F /* CTDDetailViewController.m */,
+				763582DE18DB3BDF00BAF72F /* NSString+Detector.h */,
+				763582DF18DB3BDF00BAF72F /* NSString+Detector.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -272,9 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F4DAE818D89CF300F79036 /* CTDAppDelegate.m in Sources */,
-				76F4DAF118D89CF300F79036 /* CTDDetailViewController.m in Sources */,
+				763582DD18DB365F00BAF72F /* CTDDetailViewController.m in Sources */,
 				76F4DAE418D89CF300F79036 /* main.m in Sources */,
-				76F4DAEE18D89CF300F79036 /* CTDMasterViewController.m in Sources */,
+				763582DA18DB363300BAF72F /* CTDMasterTableViewController.m in Sources */,
+				763582E018DB3BDF00BAF72F /* NSString+Detector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickableTextDemo/ClickableTextDemo-Prefix.pch";
 				INFOPLIST_FILE = "ClickableTextDemo/ClickableTextDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,6 +424,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClickableTextDemo/ClickableTextDemo-Prefix.pch";
 				INFOPLIST_FILE = "ClickableTextDemo/ClickableTextDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -481,6 +489,7 @@
 				76F4DB0B18D89CF300F79036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76F4DB0C18D89CF300F79036 /* Build configuration list for PBXNativeTarget "ClickableTextDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +498,7 @@
 				76F4DB0E18D89CF300F79036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
