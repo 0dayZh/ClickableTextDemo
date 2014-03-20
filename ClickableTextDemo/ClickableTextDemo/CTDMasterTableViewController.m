@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     self.testData = @[
-                      @"English, 简体中文，繁體中文。\n电话号码：18611011011，\n邮箱：0day.zh@gmail.com，\n链接：\n\tgoogle.com, \n\twww.google.com, \n\thttp://google.com",
+                      @"English, 简体中文，繁體中文。\n18611011011，\n邮箱：0day.zh@gmail.com，\n链接：\n\tgoogle.com, \n\twww.google.com, \n\thttp://google.com",
                       ];
 }
 

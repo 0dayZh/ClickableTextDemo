@@ -22,6 +22,9 @@
                                 if (result.URL) {
                                     NSDictionary *attibutes = @{NSLinkAttributeName:result.URL};
                                     [attibutedString addAttributes:attibutes range:result.range];
+                                } else if (result.phoneNumber) {
+                                    NSDictionary *attibutes = @{NSLinkAttributeName: [NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", result.phoneNumber]]};
+                                    [attibutedString addAttributes:attibutes range:result.range];
                                 }
                             }];
     
